@@ -58,6 +58,7 @@ public class StudentRegisterServlet extends HttpServlet {
         Student student = new Student(id, name, gender, age);
         studentRepository.save(student);
 
-        resp.sendRedirect("/student/view?id=%s".formatted(id));
+//        resp.sendRedirect("/student/view?id=%s".formatted(id));
+        req.setAttribute("view", "redirect:/student/view.do?id=%s".formatted(id));
     }
 }

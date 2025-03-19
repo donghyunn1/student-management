@@ -13,7 +13,7 @@
 </head>
 <body>
 <h1>
-    <a href="/student/register">학생 등록</a>
+    <a href="/student/register.do">학생 등록</a>
 </h1>
 
     <table border="1">
@@ -35,7 +35,7 @@
             <td>${student.gender}</td>
             <td>
                 <!-- .student/view?id=student1 -->
-                <a href="/student/view?id=${student.id}">조회</a>
+                <a href="/student/view.do?id=${student.id}">조회</a>
             </td>
         </tr>
         </c:forEach>

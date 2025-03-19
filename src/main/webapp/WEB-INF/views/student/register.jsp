@@ -12,7 +12,7 @@
     <title>학생 - 등록</title>
 </head>
 <body>
-    <form method="post" action="${action}">
+    <form method="post" action="${action}.do">
         <table border="1">
             <tbody>
             <tr>

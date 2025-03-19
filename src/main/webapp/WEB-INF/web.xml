@@ -5,7 +5,7 @@
          version="5.0">
     
     <welcome-file-list>
-        <welcome-file>student/list</welcome-file>
+        <welcome-file>student/list.do</welcome-file>
     </welcome-file-list>
 
     <error-page>

@@ -34,6 +34,7 @@ public class StudentDeleteServlet extends HttpServlet {
             throw new BadRequestException("Invalid ID");
         }
         studentRepository.deleteById(id);
-        resp.sendRedirect("/student/list");
+//        resp.sendRedirect("/student/list");
+        req.setAttribute("view", "redirect:/student/list.do");
     }
 }

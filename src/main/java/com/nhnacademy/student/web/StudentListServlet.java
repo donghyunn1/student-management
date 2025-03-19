@@ -33,7 +33,10 @@ public class StudentListServlet extends HttpServlet {
         List<Student> studentList = studentRepository.getStudents();
         req.setAttribute("studentList", studentList);
 
-        RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/views/student/list.jsp");
-        rd.forward(req, resp);
+//        RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/views/student/list.jsp");
+//        rd.forward(req, resp);
+
+        req.setAttribute("view", "/WEB-INF/views/student/list.jsp");
+
     }
 }

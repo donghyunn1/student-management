@@ -37,9 +37,9 @@
      <tfoot>
      <tr>
          <td colspan="2">
-             <a href="/student/list">리스트</a>&nbsp;&nbsp;
-             <a href="/student/update?id=${student.id}">수정</a>
-             <form method="post" action="/student/delete">
+             <a href="/student/list.do">리스트</a>&nbsp;&nbsp;
+             <a href="/student/update.do?id=${student.id}">수정</a>
+             <form method="post" action="/student/delete.do">
                  <input type = "hidden" name="id" value="${student.id}" />
                  <button type="submit">삭제</button>
              </form>
