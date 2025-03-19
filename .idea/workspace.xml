@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="888ba10e-a622-4c19-aa0b-0c7e326ad7bc" name="Changes" comment="등록 기능 구현" />
+    <list default="true" id="888ba10e-a622-4c19-aa0b-0c7e326ad7bc" name="Changes" comment="경로수정">
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/register.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,7 +187,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742345562310</updated>
-      <workItem from="1742345563489" duration="5458000" />
+      <workItem from="1742345563489" duration="6677000" />
     </task>
     <task id="LOCAL-00001" summary="주요 객체 구현">
       <option name="closed" value="true" />
@@ -235,7 +237,31 @@
       <option name="project" value="LOCAL" />
       <updated>1742350032163</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="localdatetime 커스텀 태그 구현">
+      <option name="closed" value="true" />
+      <created>1742351172551</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742351172551</updated>
+    </task>
+    <task id="LOCAL-00008" summary="조회기능 구현">
+      <option name="closed" value="true" />
+      <created>1742351189116</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742351189116</updated>
+    </task>
+    <task id="LOCAL-00009" summary="경로수정">
+      <option name="closed" value="true" />
+      <created>1742351285940</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742351285940</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +274,9 @@
     <MESSAGE value="구조변경" />
     <MESSAGE value="리스트 기능 구현" />
     <MESSAGE value="등록 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="등록 기능 구현" />
+    <MESSAGE value="localdatetime 커스텀 태그 구현" />
+    <MESSAGE value="조회기능 구현" />
+    <MESSAGE value="경로수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="경로수정" />
   </component>
 </project>
