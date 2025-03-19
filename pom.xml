@@ -18,31 +18,66 @@
   </properties>
 
   <dependencies>
-<dependency>
+    <dependency>
       <groupId>jakarta.servlet</groupId>
       <artifactId>jakarta.servlet-api</artifactId>
       <version>5.0.0</version>
       <scope>provided</scope>
     </dependency>
-<dependency>
+
+    <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
+
+     <dependency>
+         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
         <version>${junit.version}</version>
         <scope>test</scope>
-      </dependency>  </dependencies>
+      </dependency>
+
+      <dependency>
+          <groupId>org.glassfish.web</groupId>
+          <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+          <version>3.0.1</version>
+      </dependency>
+
+      <dependency>
+          <groupId>jakarta.servlet.jsp.jstl</groupId>
+          <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+          <version>3.0.1</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-math3</artifactId>
+          <version>3.6.1</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+          <version>1.18.34</version>
+      </dependency>
+
+      <dependency>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-classic</artifactId>
+          <version>1.5.11</version>
+      </dependency>
+
+  </dependencies>
 
   <build>
     <plugins>
-<plugin>
+        <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.4.0</version>
-      </plugin>    </plugins>
+      </plugin>
+    </plugins>
   </build>
 </project>
