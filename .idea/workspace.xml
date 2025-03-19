@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="888ba10e-a622-4c19-aa0b-0c7e326ad7bc" name="Changes" comment="수정 기능 구현" />
+    <list default="true" id="888ba10e-a622-4c19-aa0b-0c7e326ad7bc" name="Changes" comment="삭제 기능 구현" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,8 +20,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -185,7 +185,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742345562310</updated>
-      <workItem from="1742345563489" duration="7423000" />
+      <workItem from="1742345563489" duration="7951000" />
     </task>
     <task id="LOCAL-00001" summary="주요 객체 구현">
       <option name="closed" value="true" />
@@ -267,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742358131948</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="삭제 기능 구현">
+      <option name="closed" value="true" />
+      <created>1742358768415</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1742358768415</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +292,7 @@
     <MESSAGE value="조회기능 구현" />
     <MESSAGE value="경로수정" />
     <MESSAGE value="수정 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="수정 기능 구현" />
+    <MESSAGE value="삭제 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="삭제 기능 구현" />
   </component>
 </project>
