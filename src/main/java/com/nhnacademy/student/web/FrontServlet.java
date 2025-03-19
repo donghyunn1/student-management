@@ -1,5 +1,6 @@
 package com.nhnacademy.student.web;
 
+import com.nhnacademy.student.controller.*;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -26,19 +27,17 @@ public class FrontServlet extends HttpServlet {
 
         try{
             //실제 요청 처리할 servlet을 결정
-            String servletPath = resolveServlet(req.getServletPath());
-            RequestDispatcher rd = req.getRequestDispatcher(servletPath);
-            rd.include(req, resp);
+            Command command = resolveCommand(req.getServletPath(), req.getMethod());
 
             //실제 요청을 처리한 servlet이 'view'라는 request 속성값으로 view를 전달해 줌.
-            String view = (String) req.getAttribute("view");
+            String view = command.execute(req, resp);
             if (view.startsWith(REDIRECT_PREFIX)) {
                 log.error("redirect-url : {}", view.substring(REDIRECT_PREFIX.length()+1));
                 // todo  `redirect:`로 시작하면 redirect 처리.
                 resp.sendRedirect(view.substring(REDIRECT_PREFIX.length()+1));
             } else {
                 //todo redirect 아니면 JSP에게 view 처리를 위임하여 그 결과를 include시킴.
-                rd = req.getRequestDispatcher(view);
+                RequestDispatcher rd = req.getRequestDispatcher(view);
                 rd.include(req, resp);
             }
         }catch(Exception ex){
@@ -55,24 +54,26 @@ public class FrontServlet extends HttpServlet {
         }
     }
 
-    private String resolveServlet(String servletPath){
-        String processingServlet = null;
-        if("/student/list.do".equals(servletPath)){
-            processingServlet = "/student/list";
-        } else if ("/student/view.do".equals(servletPath)) {
-            processingServlet = "/student/view";
-        } else if ("/student/register.do".equals(servletPath)) {
-            processingServlet = "/student/register";
-        } else if ("/student/update.do".equals(servletPath)) {
-            processingServlet = "/student/update";
-        } else if ("/student/delete.do".equals(servletPath)) {
-            processingServlet = "/student/delete";
-        } else {
-            processingServlet = "/error";
+    private Command resolveCommand(String servletPath, String method){
+        Command command = null;
+        if("/student/list.do".equals(servletPath) && "GET".equalsIgnoreCase(method) ){
+            command = new StudentListController();
+        }else if("/student/view.do".equals(servletPath) && "GET".equalsIgnoreCase(method) ){
+            command = new StudentViewController();
+        }else if("/student/delete.do".equals(servletPath) && "POST".equalsIgnoreCase(method) ){
+            command = new StudentDeleteController();
+        }else if("/student/update.do".equals(servletPath) && "GET".equalsIgnoreCase(method) ){
+            command = new StudentUpdateFormController();
+        }else if("/student/update.do".equals(servletPath) && "POST".equalsIgnoreCase(method) ){
+            command = new StudentUpdateController();
+        }else if("/student/register.do".equals(servletPath) && "GET".equalsIgnoreCase(method) ){
+            command = new StudentRegisterFormController();
+        }else if("/student/register.do".equals(servletPath) && "POST".equalsIgnoreCase(method) ){
+            command = new StudentRegisterController();
+        }else if("/error.do".equals(servletPath)){
+            command = new ErrorController();
         }
-
-        //todo 실행할 servlet 결정하기
-        return processingServlet;
+        return command;
     }
 
 }
