@@ -2,6 +2,7 @@ package com.nhnacademy.student.repository;
 
 import com.nhnacademy.student.Student;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -11,31 +12,33 @@ public class MapStudentRepository implements StudentRepository {
 
     @Override
     public void save(Student student) {
-
+        studentsMap.put(student.getId(), student);
     }
 
     @Override
     public void update(Student student) {
-
+        if (existById(student.getId())) {
+            studentsMap.put(student.getId(), student);
+        }
     }
 
     @Override
     public void deleteById(String id) {
-
+        studentsMap.remove(id);
     }
 
     @Override
     public Student getStudentById(String id) {
-        return null;
+        return studentsMap.get(id);
     }
 
     @Override
     public List<Student> getStudents() {
-        return List.of();
+        return new ArrayList<>(studentsMap.values());
     }
 
     @Override
     public boolean existById(String id) {
-        return false;
+        return studentsMap.containsKey(id);
     }
 }
