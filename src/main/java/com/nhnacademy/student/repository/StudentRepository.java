@@ -1,6 +1,6 @@
 package com.nhnacademy.student.repository;
 
-import com.nhnacademy.student.Student;
+import com.nhnacademy.student.domain.Student;
 
 import java.util.List;
 

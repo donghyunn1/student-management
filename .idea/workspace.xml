@@ -9,7 +9,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="888ba10e-a622-4c19-aa0b-0c7e326ad7bc" name="Changes" comment="삭제 기능 구현" />
+    <list default="true" id="888ba10e-a622-4c19-aa0b-0c7e326ad7bc" name="Changes" comment="error handler (step1완료)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/filter/CharEncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/domain/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/jstl/LocalDateTimeFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/listener/WebApplicationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/listener/ApplicationStartListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/repository/MapStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/repository/impl/MapStudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/servlet/ErrorServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/servlet/StudentDeleteServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/servlet/StudentListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/web/StudentListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/servlet/StudentRegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/web/StudentRegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/servlet/StudentUpdateServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/servlet/StudentViewServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tld/customTagLibrary.tld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,8 +42,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -73,16 +95,22 @@
     "Tomcat Server.Tomcat 10.1.39.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/82102/Desktop/NHN아카데미/servlet-jsp-exercise",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.12515645",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.39" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.39" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
       <deployment>
         <artifact name="student:war exploded">
           <settings>
@@ -185,7 +213,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742345562310</updated>
-      <workItem from="1742345563489" duration="7951000" />
+      <workItem from="1742345563489" duration="23458000" />
     </task>
     <task id="LOCAL-00001" summary="주요 객체 구현">
       <option name="closed" value="true" />
@@ -275,11 +303,30 @@
       <option name="project" value="LOCAL" />
       <updated>1742358768415</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="error handler (step1완료)">
+      <option name="closed" value="true" />
+      <created>1742359316172</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1742359316172</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="주요 객체 구현" />
@@ -293,6 +340,11 @@
     <MESSAGE value="경로수정" />
     <MESSAGE value="수정 기능 구현" />
     <MESSAGE value="삭제 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="삭제 기능 구현" />
+    <MESSAGE value="error handler (step1완료)" />
+    <option name="LAST_COMMIT_MESSAGE" value="error handler (step1완료)" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
