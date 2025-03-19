@@ -4,7 +4,7 @@
 <html>
 <head>
   <title>학생-조회</title>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/style.css" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
 <!-- 학생 정보 출력 -->
@@ -33,7 +33,7 @@
   </tbody>
 </table>
 <ul>
-  <li><a href="${pageContext.request.contextPath}/student/list">리스트</a></li>
+  <li><a href="/student/list">리스트</a></li>
   <li>
     <c:url var="update_link" value="/student/update" >
       <c:param name="id" value="${student.id}" />
