@@ -1,5 +1,7 @@
 package com.nhnacademy.student;
 
+import java.time.LocalDateTime;
+
 public class Student {
     //아이디
     private  String id;

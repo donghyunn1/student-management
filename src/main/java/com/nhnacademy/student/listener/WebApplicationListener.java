@@ -1,4 +1,4 @@
-package com.nhnacademy.student;
+package com.nhnacademy.student.listener;
 
 import com.nhnacademy.student.repository.MapStudentRepository;
 import com.nhnacademy.student.repository.StudentRepository;
