@@ -2,6 +2,7 @@ package com.nhnacademy.student.controller;
 
 import com.nhnacademy.student.domain.Student;
 import com.nhnacademy.student.repository.StudentRepository;
+import com.nhnacademy.student.repository.impl.JsonStudentRepository;
 import com.nhnacademy.student.repository.impl.MapStudentRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

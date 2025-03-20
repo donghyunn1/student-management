@@ -4,6 +4,7 @@ import com.nhnacademy.student.domain.Student;
 import com.nhnacademy.student.exception.BadRequestException;
 import com.nhnacademy.student.exception.StudentNotFoundException;
 import com.nhnacademy.student.repository.StudentRepository;
+import com.nhnacademy.student.repository.impl.JsonStudentRepository;
 import com.nhnacademy.student.repository.impl.MapStudentRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
